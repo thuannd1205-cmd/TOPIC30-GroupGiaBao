@@ -1,1 +1,17 @@
+1. Thu thập và xử lý dữ liệu:
+Thu thập ảnh biển báo giao thông Việt Nam, làm sạch, gán nhãn và chuẩn hóa dữ liệu.
 
+2. Phát hiện biển báo:
+Xác đinhn vị trí biển báo trong ảnh bằng khun giới hạn Bounding Box. 
+
+3. Nhận diện, phân loại biển báo:
+Xác định biển báo thuộc loại nào, ví dụ biển cấm, biển nguy hiểm, biển hiệu lệnh hoặc biển chỉ dẫn.
+
+4. Huấn luyện mô hình YOLO:
+Sử dụng dữ liệu đã gán nhãn để huấn luyện mô hình phát hiện và phân loại biển báo.
+
+5. Nhận diện biển bảo trong ảnh/video:
+Đưa ảnh hoặc video vào mô hình và hiển thị vị trí, tên biển báo cùng độ tin cậy.
+
+6. Đánh giá hiệu năng hệ thống:
+Đánh giá độ chính xác, khả năng phát hiện và tốc độ xử lý của mô hình.
