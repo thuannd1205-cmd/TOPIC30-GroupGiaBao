@@ -1,0 +1,18 @@
+# Môi trường ảo
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Dataset (quá nặng, không nên đưa lên GitHub)
+train/
+valid/
+test/
+datasets/
+*.zip
+
+# Kết quả train / predict
+runs/
+
+# Tùy chọn: bỏ dòng dưới nếu muốn đưa best.pt lên GitHub
+# models/*.pt
