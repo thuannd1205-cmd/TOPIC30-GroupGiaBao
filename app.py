@@ -1,7 +1,3 @@
-"""
-HỆ THỐNG PHÁT HIỆN VÀ NHẬN DIỆN BIỂN BÁO GIAO THÔNG BẰNG YOLO
-Chạy:  streamlit run app.py
-"""
 import json
 import os
 import shutil

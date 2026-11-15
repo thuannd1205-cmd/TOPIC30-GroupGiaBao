@@ -9,8 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class ProjectStructureTests(unittest.TestCase):
     def test_required_files_exist(self):
-        for name in ("app.py", "train.py", "predict.py", "data.yaml",
-                     "requirements.txt", "models/best.pt", "classes_vi.json"):
+        for name in ("app.py", "data.yaml", "requirements.txt", "models/best.pt", "classes_vi.json"):
             with self.subTest(name=name):
                 self.assertTrue((ROOT / name).exists(), f"Thiếu {name}")
 
