@@ -5,10 +5,7 @@ __pycache__/
 *.pyc
 
 # Dataset (quá nặng, không nên đưa lên GitHub)
-train/
-valid/
-test/
-datasets/
+Vietnam-Traffic-Sign-Detection
 *.zip
 
 # Kết quả train / predict
