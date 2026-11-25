@@ -6,7 +6,7 @@ Dự án sử dụng Ultralytics YOLO để phát hiện biển báo giao thông
 Các chức năng chính:
 - Kiểm tra môi trường Python, thư viện và CPU/GPU.
 - Thống kê bộ dữ liệu YOLO (ảnh, nhãn, số lớp, lỗi nhãn).
-- Huấn luyện mô hình bằng `train.py`.
+- Huấn luyện mô hình bằng Google Colab.
 - Nhận diện hình ảnh và video bằng giao diện `app.py`.
 - Tải ảnh/video kết quả và bảng thống kê CSV.
 
@@ -15,8 +15,6 @@ Các chức năng chính:
 ```text
 TOPIC30-GroupGiaBao/
 ├── app.py
-├── train.py
-├── predict.py
 ├── data.yaml
 ├── classes_vi.json
 ├── requirements.txt
@@ -27,7 +25,6 @@ TOPIC30-GroupGiaBao/
 │   └── analyze_dataset.py
 ├── tests/
 │   └── test_project.py
-├── CHUONG_4_XAY_DUNG_VA_TRIEN_KHAI.md
 └── README.md
 ```
 
@@ -110,15 +107,6 @@ Trình duyệt sẽ mở giao diện. Chọn trọng số ở thanh bên, điề
 - Tab **Nhận diện video**: tải video, nhấn **Bắt đầu nhận diện video**; xem tiến trình và video kết quả; tải video và CSV.
 - Có thể bật tracking để theo dõi ID đối tượng qua các khung hình.
 
-Có thể chạy dự đoán bằng dòng lệnh:
-
-```powershell
-python predict.py --source anh_thu.jpg
-python predict.py --source video_thu.mp4
-```
-
-Kết quả dự đoán CLI được lưu trong `runs/predict/`.
-
 ## 7. Kiểm thử
 
 ```powershell
@@ -128,7 +116,7 @@ python -m unittest discover -s tests -v
 Kiểm thử cú pháp:
 
 ```powershell
-python -m compileall app.py train.py predict.py scripts tests
+python -m compileall app.py scripts tests
 ```
 
 ## 8. Đưa dự án lên GitHub
